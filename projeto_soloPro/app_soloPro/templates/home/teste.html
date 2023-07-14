@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Detalhes do Candidato</title>
+    <!-- Adicione o link para o arquivo CSS do Bootstrap -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css">
+    <style>
+        .candidate-details-container {
+            background-color: #5dadfd;
+            height: 400px;
+            width: 400px;
+            margin: 0 auto;
+            margin-top: 100px;
+            padding: 20px;
+            text-align: center;
+            border-radius: 10px;
+        }
+        .candidate-details-container img {
+            max-width: 200px;
+            max-height: 200px;
+            margin-bottom: 20px;
+        }
+
+        #botao{
+            margin-top: 20px;
+        }
+    </style>
+</head>
+<body>
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+        <a class="navbar-brand" href="#">Solo Pro</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav mr-auto">
+                <li class="nav-item active">
+                    <a class="nav-link" href="#">Página Inicial <span class="sr-only">(current)</span></a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">Sobre</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">Serviços</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">Contato</a>
+                </li>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- Detalhes do Candidato -->
+    <div class="container">
+        <div class="candidate-details-container">
+            <div class="text-center">
+                <img src="candidato1.jpg" class="img-fluid" alt="Foto do Candidato">
+            </div>
+            <h3>Guilherme</h3>
+            <p>Descrição do Candidato</p>
+            <ul class="list-group">
+                <li class="list-group-item">Idade: 20 anos</li>
+                <li class="list-group-item">Experiência: 5 anos</li>
+                <li class="list-group-item">Formação: Ensino Médio Completo</li>
+                <li class="list-group-item">Habilidades: ajudante de pedreiro</li>
+            </ul>
+            
+        </div>
+        <div id="botao" class="text-center mt-4">
+            <a href="#" class="btn btn-primary">Voltar para a lista de candidatos</a>
+        </div>
+    </div>
+
+    <!-- Adicione o link para o arquivo JavaScript do Bootstrap -->
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"></script>
+</body>
+</html>
