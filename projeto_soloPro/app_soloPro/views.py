@@ -6,8 +6,8 @@ def index(request):
 def login(request):
     return render(request, 'home/login.html')
 
-def teste(request):
-    return render(request, 'home/teste.html')
+def detalhes(request):
+    return render(request, 'home/detalhes.html')
 
 def candidatos(request):
     return render(request, 'home/candidatos.html')

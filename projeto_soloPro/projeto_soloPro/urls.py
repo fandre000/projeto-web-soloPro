@@ -6,7 +6,7 @@ from app_soloPro import views
 urlpatterns = [
     path('', views.index, name='index'), 
     path('login/', views.login, name='login'),
-    path('teste/', views.teste, name='teste'),
+    path('detalhes/', views.detalhes, name='detalhes'),
     path('candidatos/', views.candidatos, name='candidatos'),
     path('vagas/', views.vagas, name='vagas'),
 
