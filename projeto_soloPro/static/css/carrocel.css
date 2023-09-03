@@ -1,0 +1,43 @@
+ /* Estilo personalizado para o carousel */
+ .carousel {
+    width: 200px;
+    height: 300px;
+  }
+
+  .carousel-inner {
+    width: 100%;
+    height: 100%;
+  }
+
+  .carousel-item img {
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+  }
+
+  .carousel-caption {
+    background-color: rgba(0, 0, 0, 0.7);
+    padding: 10px;
+  }
+
+  .carousel-caption h3, .carousel-caption p {
+    color: #fff;
+  }
+
+  /* Estilizar as setas de navegação */
+  .carousel-control-prev, .carousel-control-next {
+    width: 10%;
+    background: rgba(0, 0, 0, 0.5);
+  }
+
+  .carousel-control-prev-icon, .carousel-control-next-icon {
+    filter: invert(100%);
+  }
+
+  .carousel-control-next {
+    right: 0;
+  }
+
+  .carousel-indicators {
+    bottom: 0;
+  }

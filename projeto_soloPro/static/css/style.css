@@ -36,7 +36,7 @@
     display: flex;
     align-items: center;
     justify-content: center;
-    background-color: rgb(16, 13, 181);
+    background-color: rgb(185, 185, 185);
 }
 
 .contratar{
@@ -120,7 +120,7 @@ body {
 }
 
 .candidatos{
-    height: 620px;
+    height: 600px;
     width: 108%;
     box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px;
     
@@ -141,7 +141,7 @@ body {
 .card-candidatos{
     
     width: 95%;
-    height: 100px;
+    height: 10px;
     margin: 10px;
     background-color: var(--whiteColor);
     border-radius: 10px;
@@ -352,7 +352,7 @@ body {
     width: 30%;
     display: flex;
     flex-direction: column;
-    
+    margin-top: 200px;
     margin-left: 10px;
 }
 

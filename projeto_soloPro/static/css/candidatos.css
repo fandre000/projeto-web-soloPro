@@ -1,0 +1,101 @@
+*{
+    margin: 0%;
+    padding: 0%;
+    box-sizing: border-box;
+}
+
+.custom-container {
+    background-color: rgb(70, 191, 251);
+    height: 100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 30px;
+    color: white;
+    font-family: sans-serif;
+}
+.candidates-container {
+    background-color: #f8f9fa;
+    padding: 20px;
+}
+
+
+.card-candidatos{
+    background-color: rgb(230, 230, 230);
+    width: 300px;
+     
+    text-align: center; 
+    border: 5px solid rgb(255, 255, 255); 
+    display: inline-block; 
+    margin-top: 20px; 
+    border-radius: 10px;
+    margin-left: 10px;  
+    height: max-content;
+    margin-top: 20px;
+
+}
+
+#h6-style{
+     
+    width: 100%; 
+    display: flex; 
+    flex-direction: row; 
+    flex-flow: wrap;
+
+}
+
+a{
+    text-decoration: none;
+    color: white;
+}
+
+.bnt-candidatos-editar{
+    
+    background-color: rgb(230, 230, 230);
+    width: 100%; 
+    display: flex; 
+    flex-direction: row; 
+    flex-flow: wrap; 
+    align-items: center; 
+    justify-content:space-around;
+
+}
+
+
+
+.bnt-zin{ 
+    background-color: rgb(70, 191, 251); 
+    text-decoration: none; 
+    color: white; 
+    width: 90px; 
+    height: 40px; 
+    border-radius: 10px; 
+    display: flex; 
+    justify-content: center; 
+    align-items: center;
+}
+
+.lista-candidatos{
+    display: flex;
+    flex-direction: row; 
+    width: 100%; 
+    flex-flow: wrap;  
+    margin-top: 20px; 
+    align-items: center; 
+    justify-content: center;
+}
+
+
+.imgs-candidatos{
+    height: 80px ; 
+    width: 80px; 
+    border: 3px solid rgb(4, 0, 255); 
+    margin: 10px;
+    background-image: url("{% static 'img/icon-trabalhar.png' %}");
+    background-size: contain;
+    background-position: center;
+    background-repeat: no-repeat;
+    border-radius: 10px;
+    
+
+}

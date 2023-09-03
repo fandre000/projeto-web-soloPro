@@ -95,7 +95,7 @@ h2{
 .butoes{
     width: 50%;
     height: 40px;
-    
+    border: red;
     display: flex;
     flex-direction: row;
     justify-content: space-between;

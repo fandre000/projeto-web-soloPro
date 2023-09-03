@@ -45,27 +45,27 @@
                 <div class="text-center">
                     <img src="candidato1.jpg" class="img-fluid" alt="Foto do Candidato">
                 </div>
-                <h3>{{ candidato.nome }}</h3>
+                <h3>{{ vaga.nome }}</h3>
                 <p>Descrição do Candidato</p>
                 <ul class="list-group">
                     <li class="list-group-item">Idade: 20 anos</li>
                     <li class="list-group-item">Experiência: 5 anos</li>
                     <li class="list-group-item">Formação: Ensino Médio Completo</li>
-                    <li class="list-group-item">Habilidades: {{ candidato.proficao }}</li>
-                    <li class="list-group-item">Contato: {{ candidato.contato }} </li>
-                    <li class="list-group-item">Endereço: {{ candidato.endereco }} </li>
+                    <li class="list-group-item">Habilidades: {{ vaga.proficao }}</li>
+                    <li class="list-group-item">Telefone: {{ vaga.contato }}</li>
+                    <li class="list-group-item">Endereço: {{ vaga.endereco }} </li>
                 </ul>
 
                 <div class="botoes" style="margin-top: 10px;">
                     <h6 class="bnt-candidatos-editar" style="background-color: rgb(79, 172, 254);" >
                        <div class="bnt-zin" style="background-color: rgb(26, 26, 238);">
-                        <a  href="{% url 'editar_candidato' candidato.id %}">editar</a>
+                        <a  href="{% url 'editar_vaga' vaga.id %}">editar</a>
     
                        </div  > 
                        
                        
                        <div class="bnt-zin" style="background-color: rgb(26, 26, 238);">
-                        <a href="{% url 'delete_candidato' candidato.id %}" >deletar</a> 
+                        <a href="{% url 'delete_vaga' vaga.id %}" >deletar</a> 
                        </div>
                         
                     </h6>
@@ -76,7 +76,7 @@
             
 
             <div id="botao" class="text-center mt-4">
-                <a href="{% url 'candidatos' %}" class="btn btn-primary">Voltar para a lista de candidatos</a>
+                <a href="{% url 'vagas' %}" class="btn btn-primary">Voltar para a lista de Vagas</a>
             </div>
         </div>
     

@@ -1,0 +1,19 @@
+.candidate-details-container {
+    background-color: #5dadfd;
+    height: 500px;
+    width: 400px;
+    margin: 0 auto;
+    margin-top: 100px;
+    padding: 20px;
+    text-align: center;
+    border-radius: 10px;
+}
+.candidate-details-container img {
+    max-width: 200px;
+    max-height: 200px;
+    margin-bottom: 20px;
+}
+
+#botao{
+    margin-top: 20px;
+}

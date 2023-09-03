@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+<body>
+   <h1>ola, mundo</h1>
+
+   <ul>
+    {% for pessoa in pessoas %}
+    <li>
+      
+      {{ pessoa.id }} - {{ pessoa.nome}} - {{ pessoa.idade }} - {{ pessoa.endereco }} - {{ candidato.nome}}
+      <a href="{% url 'editar' pessoa.id %}">editar</a>
+
+      <a href="{% url 'delete' pessoa.id %}">deletar</a>
+
+
+    </li>
+    {% endfor %}
+   </ul>
+
+   
+   <form action="{% url 'salvar' %}" method="POST">
+    {% csrf_token %}
+    <input type="text" name="nome">
+    <input type="text" name="idade">
+    <input type="text" name="endereco">
+    
+    <button type="submit">salvar</button>
+   </form>
+
+   <ul style="display: flex; flex-direction: row;">
+    {% for candidato in candidatos %}
+    <li style="background-color: aqua; height: max-content; width:200px;">
+      
+      {{ candidato.id }} - {{ candidato.nome }} - {{ candidato.proficao }} - {{ candidato.endereco }}
+      <a href="{% url 'editar' candidato.id %}">editar</a>
+
+      <a href="{% url 'delete' candidato.id %}">deletar</a>
+
+
+    </li>
+    {% endfor %}
+   </ul>
+
+
+  
+
+
+</body>
+</html>
